@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Flashcards App</title>
+    <meta name="robots" content="noindex">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            indigo: '#6366f1',
+                            coral: '#f43f5e',
+                            offwhite: '#f8fafc',
+                            slate: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-offwhite text-slate-800 antialiased">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-slate-600 hover:text-brand-indigo transition-colors font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver al inicio
+            </a>
+            <div class="font-bold text-xl tracking-tight text-slate-900">Flashcards App</div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-12">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">Política de Privacidad</h1>
+            <p class="text-slate-500 mb-8 pb-8 border-b border-slate-100">Última actualización: 21 de Diciembre de 2025</p>
+
+            <div class="prose prose-slate prose-indigo max-w-none text-slate-600">
+                <p class="lead text-lg font-medium text-slate-800 mb-6">
+                    Flashcards App ("nosotros", "nuestro", "la Aplicación" o "el Servicio") se compromete a proteger la privacidad de nuestros usuarios, principalmente estudiantes y profesionales. Esta Política de Privacidad describe cómo recopilamos, utilizamos, almacenamos y compartimos la información personal y académica que obtenemos a través de nuestra aplicación móvil.
+                </p>
+
+                <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Información que Recopilamos</h2>
+                
+                <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-3">1. Información de Cuenta y Perfil</h3>
+                <ul class="list-disc pl-5 space-y-2 mb-6">
+                    <li>Nombre completo proporcionado durante el registro.</li>
+                    <li>Dirección de correo electrónico para autenticación, soporte y recuperación de cuenta.</li>
+                    <li>Contraseña encriptada y almacenada de forma segura.</li>
+                    <li>Preferencias de estudio (metas diarias, áreas de interés académico).</li>
+                    <li>Datos de autenticación social vía Google o Apple ID.</li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-3">2. Contenido Académico y Generado por el Usuario</h3>
+                <ul class="list-disc pl-5 space-y-2 mb-6">
+                    <li>Archivos PDF y documentos CSV subidos para el procesamiento y generación de fichas.</li>
+                    <li>Flashcards editadas: Modificaciones realizadas por el usuario a las preguntas y respuestas generadas por la IA.</li>
+                    <li>Mapeo Temático: Estructura de temas y subtemas identificados en sus documentos.</li>
+                    <li>Notas personales añadidas a los mazos de estudio.</li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-3">3. Información de Uso y Aprendizaje</h3>
+                <ul class="list-disc pl-5 space-y-2 mb-6">
+                    <li>Datos de interacción: Tiempo de estudio por mazo y frecuencia de acceso.</li>
+                    <li>Rendimiento de memoria: Calificaciones de dificultad (1-4) asignadas a cada flashcard.</li>
+                    <li>Información de errores y rendimiento técnico a través de Sentry.</li>
+                    <li>Grabaciones de sesión (Session Replay) únicamente en caso de fallos técnicos vía Sentry.</li>
+                    <li>Datos de atribución y fuente de instalación vía Branch.io.</li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-3">4. Información del Dispositivo y Calendario</h3>
+                <ul class="list-disc pl-5 space-y-2 mb-6">
+                    <li><strong>Sincronización con Google Calendar:</strong> Solo si se otorga permiso, accedemos a su disponibilidad para agendar recordatorios de estudio.</li>
+                    <li>Identificadores únicos del dispositivo, modelo, marca y sistema operativo.</li>
+                    <li>Dirección IP, configuración regional e idioma.</li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-3">5. Información de Compras</h3>
+                <ul class="list-disc pl-5 space-y-2 mb-6">
+                    <li>Historial de suscripciones mensuales procesado a través de RevenueCat.</li>
+                    <li>Información de facturación gestionada por las tiendas de aplicaciones (Apple/Google).</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Cómo Utilizamos su Información</h2>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-slate-50 p-6 rounded-xl">
+                        <h4 class="font-bold text-slate-900 mb-2">Propósitos Principales</h4>
+                        <p class="text-sm">Operar la aplicación, personalizar el plan de estudio según su ritmo de aprendizaje y enviar notificaciones de estudio.</p>
+                    </div>
+                    <div class="bg-indigo-50 p-6 rounded-xl">
+                        <h4 class="font-bold text-brand-indigo mb-2">Procesamiento de IA</h4>
+                        <ul class="text-sm space-y-1 text-slate-700">
+                            <li>• <strong>Mapeo Temático:</strong> Segmentación de info en subtemas.</li>
+                            <li>• <strong>Generación:</strong> Texto estático a preguntas interactivas.</li>
+                            <li>• <strong>Repetición Espaciada:</strong> Optimización de fechas de repaso.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Terceros y Compartición</h2>
+                <p class="mb-4">No vendemos su información personal. Compartimos datos únicamente con los siguientes proveedores:</p>
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full text-left text-sm whitespace-nowrap">
+                        <thead class="uppercase tracking-wider border-b-2 border-slate-100 font-bold text-slate-700">
+                            <tr>
+                                <th class="px-3 py-3">Servicio</th>
+                                <th class="px-3 py-3">Proveedor</th>
+                                <th class="px-3 py-3">Propósito</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr>
+                                <td class="px-3 py-3 font-medium">Backend / DB</td>
+                                <td class="px-3 py-3 text-brand-indigo">Supabase</td>
+                                <td class="px-3 py-3 text-slate-500">Perfiles, mazos y auth.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3 font-medium">Inteligencia Artificial</td>
+                                <td class="px-3 py-3 text-brand-indigo">Google Gemini AI</td>
+                                <td class="px-3 py-3 text-slate-500">Procesamiento PDF/Topics.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3 font-medium">Sincronización</td>
+                                <td class="px-3 py-3 text-brand-indigo">Google Calendar API</td>
+                                <td class="px-3 py-3 text-slate-500">Agendamiento de sesiones.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3 font-medium">Marketing</td>
+                                <td class="px-3 py-3 text-brand-indigo">Branch.io</td>
+                                <td class="px-3 py-3 text-slate-500">Deep links y atribución.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3 font-medium">Analytics</td>
+                                <td class="px-3 py-3 text-brand-indigo">Sentry</td>
+                                <td class="px-3 py-3 text-slate-500">Errores y rendimiento.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3 font-medium">Pagos</td>
+                                <td class="px-3 py-3 text-brand-indigo">RevenueCat</td>
+                                <td class="px-3 py-3 text-slate-500">Suscripciones.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Almacenamiento y Seguridad</h2>
+                <div class="space-y-4">
+                    <p><strong>Seguridad:</strong> Encriptación en tránsito y reposo.</p>
+                    <p><strong>Retención:</strong> Datos de cuenta y mazos hasta eliminación explícita. Logs de Sentry (anonimizados) tras 90 días. Datos fiscales hasta 7 años.</p>
+                    <p><strong>Almacenamiento Local (SQLite):</strong> Guardamos <code>flashcards.sqlite</code> y <code>study_logs.sqlite</code> en su dispositivo para estudio offline.</p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Contacto</h2>
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-100">
+                    <p class="font-bold">Flashcards S.A.C. (Aura Alpha S.A.C.)</p>
+                    <p>Domicilio: Chaclacayo, Lima, Perú</p>
+                    <p>Email: <a href="mailto:thegameapp00@gmail.com" class="text-brand-indigo font-medium">thegameapp00@gmail.com</a></p>
+                    <p class="text-sm mt-2 text-slate-500">Autoridad: Autoridad Nacional de Protección de Datos Personales (Perú).</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm">© 2025 Aura Alpha S.A.C. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

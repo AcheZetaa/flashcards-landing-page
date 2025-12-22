@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Cuenta - Flashcards App</title>
+    <meta name="robots" content="noindex">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            indigo: '#6366f1',
+                            coral: '#f43f5e',
+                            offwhite: '#f8fafc',
+                            slate: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-offwhite text-slate-800 antialiased min-h-screen flex flex-col">
+    
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-slate-600 hover:text-brand-indigo transition-colors font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver
+            </a>
+            <div class="font-bold text-xl tracking-tight text-slate-900">Flashcards App</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-xl mx-auto px-4 py-12 w-full">
+        <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden">
+            <div class="bg-slate-900 p-8 text-center">
+                <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                    </svg>
+                </div>
+                <h1 class="text-2xl font-bold text-white mb-2">Eliminar Cuenta</h1>
+                <p class="text-slate-400 text-sm">Respetamos tu privacidad. Gestiona tu solicitud aquí.</p>
+            </div>
+
+            <div class="p-8">
+                <div class="bg-amber-50 border-l-4 border-amber-400 p-4 mb-8 rounded-r-lg">
+                    <p class="text-sm text-amber-800">
+                        <strong>Atención:</strong> Se eliminarán permanentemente tus mazos, PDFs procesados, historial de estudio y preferencias.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-2">Pasos para eliminar:</h3>
+                        <ol class="list-decimal list-inside text-sm text-slate-600 space-y-2 marker:text-brand-indigo marker:font-bold">
+                            <li>Abre <strong>Flashcards App</strong> en tu móvil.</li>
+                            <li>Ve a <strong>Perfil > Configuración</strong>.</li>
+                            <li>Selecciona <strong>"Eliminar Cuenta"</strong>.</li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-2">¿Qué se elimina?</h3>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1 ml-2">
+                             <li>Perfil, credenciales y avatar.</li>
+                             <li>Todos los mazos generados y PDFs subidos.</li>
+                             <li>Historial de repaso y calificaciones de dificultad.</li>
+                             <li>Sincronización con Google Calendar.</li>
+                        </ul>
+                    </div>
+
+                     <div>
+                        <h3 class="font-bold text-slate-900 mb-2">¿Qué se conserva?</h3>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1 ml-2">
+                             <li>Historial fiscal de compras (hasta 12 meses/7 años según ley).</li>
+                             <li>Datos de uso anónimos para mejora de la IA.</li>
+                        </ul>
+                    </div>
+
+                    <div class="relative py-4">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-slate-200"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-2 bg-white text-slate-500">O solicítalo vía web</span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Request Form -->
+                    <form onsubmit="event.preventDefault(); alert('Solicitud registrada. Contactaremos a thegameapp00@gmail.com si es necesario.');" class="space-y-4">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Correo Electrónico de la Cuenta</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-indigo focus:border-brand-indigo outline-none transition-all">
+                        </div>
+                        
+                        <div class="flex items-start gap-3 mt-4">
+                            <input type="checkbox" id="confirm" required class="mt-1 w-4 h-4 text-brand-indigo rounded border-slate-300 focus:ring-brand-indigo">
+                            <label for="confirm" class="text-xs text-slate-500">
+                                Entiendo que mis datos serán eliminados permanentemente de Supabase y Cloudinary.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 px-4 bg-brand-coral hover:bg-red-600 text-white font-bold rounded-xl shadow-lg shadow-red-500/20 transition-all transform hover:-translate-y-0.5">
+                            Solicitar Eliminación
+                        </button>
+                    </form>
+
+                    <p class="text-center text-xs text-slate-400 mt-6">
+                        Dudas a <a href="mailto:thegameapp00@gmail.com" class="underline hover:text-brand-indigo">thegameapp00@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
